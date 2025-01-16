@@ -1,0 +1,184 @@
+body {
+    height: 100vh; /* Full height */
+    margin: 0; /* Remove default margin */
+    background-color: #757575;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; /* Optional: Vertically aligns items */
+    padding: 10px; /* Optional: Adds padding around the nav bar */
+    margin: 0;
+    background-color: #000000; /* Optional: Background color for the nav */
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+nav ul li a:hover {
+    color: #427992; /* Changes text color on hover */
+}
+
+nav ul li a img:hover {
+    outline: #427992; /* Changes text color on hover */
+    opacity: 60%;
+}
+
+.tic-tac-toe{
+    width: 80px;
+}
+
+#retryBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#retrybtn {
+    width: 130px;
+    height: 65px;
+    font-size: 45px;
+    border: 2px solid #000;
+    background-color: #43d63e;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+#retrybtn:hover {
+    background-color: #37ac33;
+}
+
+div#gamemode, div#score{
+    text-align: center; /* Centers the content horizontally */
+    font-size:70px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+div#score{
+    text-align: center;
+    font-size:50px;
+}
+
+#gamemode button {
+    display: block; /* Forces each button onto a new line */
+    margin: 10px auto; /* Adds spacing between buttons and centers them */
+    padding: 10px 20px; /* Adjusts button size */
+    font-size: 25px; /* Adjusts font size for buttons */
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+#singlePlayerbtn {
+    background-color: red;
+}
+
+#singlePlayerbtn:hover {
+    background-color: #b90101;
+}
+
+#twoPlayerbtn {
+    background-color: rgb(0, 102, 255);
+}
+
+#twoPlayerbtn:hover {
+    background-color: rgb(0, 85, 212);
+}
+
+#gamemode button:hover {
+    cursor: pointer;
+}
+
+div#levels {
+    text-align: center; /* Centers the content horizontally */
+    font-size:70px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+#level1 {
+    background-color: #58d838;
+}
+
+#level1:hover {
+    background-color: #4abd2d;
+}
+
+#level2 {
+    background-color: #e0eb4d;
+}
+
+#level2:hover {
+    background-color: #b4bd3e;
+}
+
+#level3 {
+    background-color: #ff0000;
+}
+
+#level3:hover {
+    background-color: #b90101;
+}
+
+#levels button {
+    display: block; /* Forces each button onto a new line */
+    margin: 10px auto; /* Adds spacing between buttons and centers them */
+    padding: 10px 20px; /* Adjusts button size */
+    font-size: 25px; /* Adjusts font size for buttons */
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+#levels button:hover {
+    cursor: pointer;
+}
+
+p#textbtn {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:70px;
+    color: rgb(0, 0, 0);
+}
+
+#board{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns of equal size */
+    gap: 10px; /* Add space between buttons */
+    padding: 20px;
+    border-radius: 10px;
+    width: 470px;
+    background-color: rgb(0, 0, 0);
+
+}
+
+#board button {
+    width: 150px;
+    height: 150px;
+    font-size: 100px;
+    border: 2px solid #000;
+    background-color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+#board button:hover {
+    background-color: rgb(202, 202, 202);
+}
